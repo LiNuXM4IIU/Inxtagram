@@ -1,0 +1,4 @@
+pyngrok
+requests
+termcolor
+ngrok
