@@ -11,7 +11,7 @@ git clone https://github.com/L1NUXMAllU/Inxtagram.git
 
 cd Inxtagram
 
-pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 python3 setup.py
 
