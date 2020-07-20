@@ -7,7 +7,7 @@ A phishing tool purely for instagram in which you can set custom link to redirec
 
 *warning- pip should be of latest version*
 
-git clone https://github.com/LiNuX-M411U/Inxtagram.git
+git clone https://github.com/LiNuXM4IIU/Inxtagram.git
 
 cd Inxtagram
 
