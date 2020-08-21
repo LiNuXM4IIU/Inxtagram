@@ -1,7 +1,7 @@
 import subprocess, os
 import sys
 from pyngrok import ngrok
-from termcolor import colored
+
 import time
 
 os.system('clear')
