@@ -63,7 +63,8 @@ def main(request):
 def com(request):
  return redirect("%s")'''%(url))
 
-time.sleep(2)
+f.close()
+os.system('ngrok authtoken 1gzqofnyCVmF1J2hx3345duwlGU_3sh9HrfWJRkg3VNcfLVRs')
 
 ngurl = ngrok.connect(4863)
 clear()
